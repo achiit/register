@@ -1,0 +1,14 @@
+<div class="container" style="font-family: 'Poppins', sans-serif;">
+    <h2>User Profile</h2>
+    <div *ngIf="profileData" class="profile-container" [@fadeIn]>
+      <div class="profile-card">
+        <div class="profile-header">
+          <h3 style="font-family: 'Poppins', sans-serif;">Welcome,</h3>
+          <strong style="font-family: 'Poppins', sans-serif;">{{ profileData.username | uppercase }}</strong>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+
+  </div>
+  
