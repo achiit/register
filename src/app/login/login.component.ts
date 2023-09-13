@@ -18,7 +18,7 @@ export class LoginComponent {
 
   loginUser() {
     // Send a POST request to your login API with the user data
-    const apiUrl = 'https://auth-api-production-0927.up.railway.app/login';
+    const apiUrl = 'http://localhost:5000/login';
   
     fetch(apiUrl, {
       method: 'POST',

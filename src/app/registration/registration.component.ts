@@ -22,7 +22,8 @@ export class RegistrationComponent {
     }
 
     // Send a POST request to your API with the user data
-    const apiUrl = 'https://auth-api-production-0927.up.railway.app/register';
+    //const apiUrl = 'https://auth-api-production-0927.up.railway.app/register';
+    const apiUrl = 'http://localhost:5000/register';
 
     fetch(apiUrl, {
       method: 'POST',

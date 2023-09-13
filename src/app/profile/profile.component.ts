@@ -35,7 +35,7 @@ export class ProfileComponent implements OnInit {
     const headers = { 'Authorization': `${token}` }
     const requestOptions = { headers: headers };
     // Make a GET request to the profile API
-    const apiUrl = 'https://auth-api-production-0927.up.railway.app/profile';
+    const apiUrl = 'http://localhost:5000/profile';
     this.http.get(apiUrl, { headers })
       .subscribe(
         (data: any) => {
